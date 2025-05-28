@@ -117,7 +117,7 @@ class WeatherApp(QMainWindow):
     def load_weather_data(self):
         city = self.search_input.text().strip()
         if city:
-            api_key = "1ddd434490e6555185c572abf8eb4389"
+            api_key
             try:
                 weather_data = self.fetch_weather_data(api_key, city)
                 self.populate_current_weather(weather_data['city'], weather_data['list'][0])
